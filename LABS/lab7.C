@@ -1,0 +1,49 @@
+#include <iostream>
+
+using  namespace std;
+
+
+int main()
+{
+  int num = 0;
+  int input = 0;
+  int evenCounter = 0;
+  int oddCounter = 0;
+   while(num != -1)
+    {
+      cout << "Enter an Integer (-1 to quit): ";
+
+      cin >> num;
+	  if( num % 2 == 0)
+	    {
+	      cout << "Your number is even!" << endl;
+	      evenCounter++;
+	    }
+	  else if( num == -1)
+	    {
+	      if(oddCounter >= 1 && evenCounter >= 1)
+		{
+		  cout << "You entered " << oddCounter << " odd numbers " << endl;
+		  cout << "and " << evenCounter << " even numbers " << endl;
+		}
+	      else
+		{
+		  cout << "No numbers were entered" << endl;
+		}
+
+
+	      
+	    }
+  
+	  else
+	    {
+	      cout << "Your number is odd!" << endl;
+	      oddCounter++;
+	    }
+   
+
+    }
+}
+
+
+ 

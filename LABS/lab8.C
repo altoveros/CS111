@@ -1,0 +1,35 @@
+#include <iostream>
+
+
+using  namespace std;
+
+int main()
+{
+  int num = 0;
+  int evenCounter = 0;
+  int oddCounter = 0;
+  char answer;
+  cout << "Please enter an integer: ";
+  do
+    {
+      cin >> num;
+      cout << "Would you like to enter another integer? (Y for Yes, N for No) ";
+      cin >> answer;
+      if(num % 2 == 0)
+	{
+	  evenCounter++;
+	}
+      else
+	{
+	  oddCounter++;
+	}
+
+      if( answer == 'Y' || answer == 'y')
+	{
+	  cout << "Please enter another integer: "; 
+	}
+    }  while( answer != 'n' && answer != 'N');
+
+  cout << "You entered " << oddCounter << " odd numbers" << endl;
+  cout << "You entered " << evenCounter << " even numbers" << endl;
+}

@@ -1,0 +1,23 @@
+#include <iostream>
+
+
+using namespace std;
+
+
+int main()
+{
+  double x = 0;
+  double y = 0;
+  double input;
+  double * xpointer = &x;
+  double *  ypointer = &y;
+  
+  cout << "The value of x is " << x << " and it's memory location is " << &xpointer << endl;
+
+  cout << "Please enter a value for x: ";
+  cin >> input;
+* xpointer = input;
+  cout << endl;
+  cout << "The value of x now is " << x << " and it's memory location is " << &xpointer << endl;
+
+}

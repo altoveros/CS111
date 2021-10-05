@@ -1,0 +1,20 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+
+int main()
+{
+  ofstream fout;
+  string x;
+
+  fout.open("sentence.txt");
+  cout << "Enter a sentence: ";
+  getline(cin, x);
+  fout << x << endl;
+  fout.close();
+
+  return 0;
+
+}
