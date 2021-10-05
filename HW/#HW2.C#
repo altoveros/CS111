@@ -1,0 +1,16 @@
+#inlclude <iostream>
+
+using namespace std;
+
+int main()
+{
+  ofstream fout;
+  int x;
+
+
+  cout << "P
+lease enter the size of the triangle you'd like (an integer from 1 to 50) " ;
+  for(int i 
+  
+
+}
